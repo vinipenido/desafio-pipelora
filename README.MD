@@ -126,19 +126,20 @@ Faz login no sistema informado, extrai os dados e retorna como JSON.
 ---
 
 ## Estrutura do projeto
-
+```
 desafio-pipelora/
-src/
-routes/
-integrar.js     # endpoint POST /integrar e GET /
-services/
-scraper.js      # lógica do Puppeteer
-api-pipelora.js   # servidor principal
-.env                # variáveis de ambiente (não commitado)
-.env.example        # modelo das variáveis
-.gitignore
-package.json
-README.md
+├── src/
+│   ├── routes/
+│   │   └── integrar.js       # endpoint GET / e POST /integrar
+│   ├── services/
+│   │   └── scraper.js        # lógica do Puppeteer
+│   └── api-pipelora.js       # servidor principal
+├── .env                      # variáveis de ambiente (não commitado)
+├── .env.example              # modelo das variáveis
+├── .gitignore
+├── package.json
+└── README.md
+```
 
 ---
 
